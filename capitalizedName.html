@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Capitalized Name</title>
+</head>
+<body>
+<h1>Capitalized you name</h1>
+
+First Name: <input type="text" id="myName" value="" placeholder="Enter your name">
+
+<p>Click the button to display the Capitalized name.</p>
+
+<button onclick="capName()">Convert</button>
+
+<p id="displayName"></p>
+
+</body>
+
+<script>
+
+function capName() {
+
+  var name = document.getElementById("myName").value;
+  
+const firstLetter = name.charAt(0)  
+
+const firstLetterCap = firstLetter.toUpperCase()
+
+const remainingLetters = name.slice(1)
+
+const capitalizedWord = firstLetterCap + remainingLetters
+
+  document.getElementById("displayName").innerHTML = capitalizedWord;
+
+}
+
+</script>
+</html>
+
+

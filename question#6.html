@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<h1>Array Product</h1>
+
+<p id="array"></p>
+
+<p id="arrayCount"></p>
+
+<p>Click the button to demonstrate the prompt box.</p>
+
+<button onclick="getUserInput()">position product</button>
+
+</body>
+
+<script>
+	
+ const fruits = ["banana", "orange", "apple", "mango"];
+
+document.getElementById("array").innerHTML = fruits;
+
+
+function getUserInput() {
+
+  let position = prompt("enter name of product");
+
+
+if(fruits.includes(position)){      
+
+     fruits.splice(fruits.indexOf(position), 1);              
+
+}else{
+
+  alert("no product found");
+}
+
+console.log(position);    
+
+let length =  fruits.length
+
+document.getElementById("array").innerHTML = fruits;
+
+document.getElementById("arrayCount").innerHTML = length
+}
+
+
+
+
+</script>
+</html>
+
+

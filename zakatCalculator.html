@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<h1>Calculate Zakat</h1>
+<p>Click the button to demonstrate the prompt box.</p>
+
+<button onclick="getUserInput()">Add Value</button>
+
+<p id="demo"></p>
+</body>
+
+<script>
+
+	var zakatPercentage = 0.025;
+	
+
+function getUserInput() {
+
+  let userInput = prompt("Enter a Value", "0");
+
+  if (userInput != null) {
+
+  			var result = zakatPercentage*userInput;
+  			alert("Your zakat value is " + result);
+
+  }
+
+}
+</script>
+</html>
+
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<h1>Calculate Zakat</h1>
+<p>Click the button to demonstrate the prompt box.</p>
+
+<button onclick="getUserInput()">Add Family Member</button>
+
+<select id="fitranaType">
+  <option selected>Select Fitrana Type</option>
+  <option value="250" >Gandum</option>
+  <option value="450">Jou</option>
+  <option value="2100">Khajoor</option>
+  <option value="2800">Kishmish</option>
+</select>
+
+</body>
+
+<script>
+	
+
+function getUserInput() {
+
+  let familyMembers = prompt("enetr family member");
+
+  var e = document.getElementById("fitranaType");
+
+function onChange() {
+
+  var value = e.value;
+
+  
+    var totalFitrana = familyMembers*value;
+
+    alert(totalFitrana);
+}
+
+e.onchange = onChange;
+onChange();
+}
+
+
+
+
+</script>
+</html>
+
+

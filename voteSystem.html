@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vote System</title>
+</head>
+<body>
+<h1>Enter your information</h1>
+
+
+<p>Click the button to enter your infromation </p>
+
+<button onclick="getUserIformation()">Add Information</button>
+
+
+</body>
+
+<script>
+
+function getUserIformation() {
+
+  let nationality = prompt("Enter Your Nationality");
+
+  let gender = prompt("Enter Your Gender");
+  
+  let age = prompt("Enter Your Age");
+
+  if (nationality != "Pakistan" &&  nationality != "pakistan" &&  nationality != "India" &&  nationality != "india") {
+
+    alert("you are not eligible to vote")
+
+  }else if(gender == "male" && age > 18){
+
+    alert("you are eligible");
+  
+  }else if(gender == "female" && age > 18){
+
+    let martialStatus = prompt("are you married ? yes or no");
+
+    if (martialStatus == "yes") {
+
+      alert("female eligible to vote")
+      
+    }else{
+
+      alert("female not eligible to vote");
+    }
+  
+  }else{
+
+    alert("sorry you are not eligible to vote");
+  }
+
+}
+
+</script>
+</html>
+
+
